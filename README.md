@@ -7,7 +7,7 @@ Returns true if the sum of signed distances is greater than zero, which can be u
 ```js
 var clockwise = require('is-clockwise')
 var points = [[25, 10], [100, 50], [10, 10]]
-console.log(clockwise(points))
+console.log(clockwise(points)) // true if polygon is clockwise
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ console.log(clockwise(points))
 
 #### `isClockwise(points)`
 
-Returns true if the points are clockwise, assuming cartesian space.
+Returns true if the points are clockwise, false if counter-clockwise. Assuming cartesian space.
 
 ## License
 
