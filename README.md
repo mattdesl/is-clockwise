@@ -2,12 +2,15 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-Returns true if the sum of signed distances is greater than zero, which can be used as a quick test for convex polygon orientation.
+Returns true if the sum of signed distances is greater than zero, which can be used as a quick test for convex polygon orientation. 
 
 ```js
-var clockwise = require('is-clockwise')
-var points = [[25, 10], [100, 50], [10, 10]]
-console.log(clockwise(points)) // true if polygon is clockwise
+var isClockwise = require('is-clockwise')
+var points = [ [0, 0], [1, 1], [1, 0], [0, 0] ]
+
+var cw = isClockwise(points)
+
+console.log(cw) // returns true
 ```
 
 ## Usage

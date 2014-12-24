@@ -2,15 +2,22 @@ var clockwise = require('./')
 var test = require('tape').test
 
 test('is clockwise', function(t) {
-    var points = [
-        [5,0],
-        [6,4],
-        [4,5],
-        [1,5],
-        [1,0]
+    var poly = [
+        [0, 0],
+        [1, 1],
+        [1, 0],
+        [0, 0]
     ]
-    var ccw = points.slice().reverse()
-    t.equal(clockwise(points), true)
-    t.equal(clockwise(ccw), false)
+    var cw = clockwise(poly)
+    t.equal(cw, true, 'should be clockwise')
+
+    poly = [
+        [0, 0],
+        [1, 0],
+        [1, 1],
+        [0, 0]
+    ]
+    var ccw = clockwise(poly)
+    t.equal(ccw, false, 'should be counter-clockwise')
     t.end()
 })
