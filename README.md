@@ -10,7 +10,7 @@ var points = [ [0, 0], [1, 1], [1, 0], [0, 0] ]
 
 var cw = isClockwise(points)
 
-console.log(cw) // returns true
+console.log(cw) // true
 ```
 
 ## Usage
