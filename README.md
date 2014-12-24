@@ -13,6 +13,8 @@ var cw = isClockwise(points)
 console.log(cw) // true
 ```
 
+See [robust-orientation](https://www.npmjs.com/package/robust-orientation) for a stronger test that handles floating point errors and other edge cases.
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/is-clockwise.png)](https://nodei.co/npm/is-clockwise/)
